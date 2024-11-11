@@ -1,7 +1,18 @@
-# dhenu_climate_llama_impact_hackathon
+# Team Dhenu: Full-Native Climate Resilient Agriculture CoPilot
 
-First create llama directory: adb shell mkdir -p /data/local/tmp/llama
-
+First create llama directory: 
+```
+adb shell mkdir -p /data/local/tmp/llama
+```
 To copy model:
+```
+adb push /Users/lokesh/Downloads/llama3_2.pte /data/local/tmp/llama/llama3_2.pte
+adb push /Users/lokesh/.llama/checkpoints/Llama3.2-1B-Instruct:int4-spinquant-eo8/tokenizer.model /data/local/tmp/llama/tokenizer.model
+```
+## Climate Resilient Agriculure (CRA) Fine-tuned Llama3.2-1b model
+Huggingface Repo for the fine-tuned model is [here.](chheplo/dhenu2-in-climate-llama3.2-1b)
 
-adb push /Users/lokesh/Downloads/llama3_2.pte /data/local/tmp/llama/ adb push /Users/lokesh/.llama/checkpoints/Llama3.2-1B-Instruct:int4-spinquant-eo8/tokenizer.model /data/local/tmp/llama/
+## Datasets used for the fine-tuning model
+DUring the hackathon, we built syntehtic datapipelines to generate instruction pairs for the CRA data, and also used factual Q&A from institutes
+Dataset build during this hackathon to train the model are [synthetic](https://huggingface.co/datasets/KissanAI/llama-hackathon-climate-synth-qa) and [knowledge based](https://huggingface.co/datasets/KissanAI/llama-hackathon-climate-kb-qa)
+
