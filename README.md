@@ -1,5 +1,10 @@
 # Team Dhenu: Full-Native Climate Resilient Agriculture CoPilot
 
+
+https://github.com/user-attachments/assets/3a413222-957d-42e8-a060-4420680d4d8f
+
+
+
 First create llama directory: 
 ```
 adb shell mkdir -p /data/local/tmp/llama
